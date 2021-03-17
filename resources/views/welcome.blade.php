@@ -8,6 +8,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="{{asset('css/style.css')}}" rel="stylesheet">
 
         <!-- Styles -->
         {{-- <style>
@@ -21,6 +22,100 @@
         </style>
     </head>
     <body class="antialiased">
-        
+        <div class="co-app">
+            <div class="header fixed">
+                <img src="{{asset('images/header.jpg')}}" alt="">
+            </div>
+            <div class="year">
+                <div class="list-header">
+                    <div class="num">1</div>
+                    <div class="title">År <span id="year-number"></span></div>
+                </div>
+                <div class="question">Hvilket år er du født?</div>
+                <ul class="years">
+                    <li>2021</li>
+                    <li>2020</li>
+                    <li>2019</li>
+                    <li>2018</li>
+                    <li>2017</li>
+                    <li>2016</li>
+                    <li>2015</li>
+                    <li>2014</li>
+                    <li>2013</li>
+                    <li>2012</li>
+                </ul>
+            </div>
+            <div class="month">
+                <div class="list-header">
+                    <div class="num">2</div>
+                    <div class="title">Måned <span id="month-number"></span></div>
+                </div>
+                <div class="question"> Year </div>
+                <ul class="monthes">
+                    <li data-month="januar">januar</li>
+                    <li data-month="februar">februar</li>
+                    <li data-month="marts">marts</li>
+                    <li data-month="april">april</li>
+                    <li data-month="maj">maj</li>
+                    <li data-month="juni">juni</li>
+                    <li data-month="juli">juli</li>
+                    <li data-month="august">august</li>
+                    <li data-month="september">september</li>
+                    <li data-month="october">october</li>
+                    <li data-month="november">november</li>
+                    <li data-month="december">december</li>
+                </ul>
+            </div>
+            <div class="day">
+                <div class="list-header">
+                    <div class="num">3</div>
+                    <div class="title">Dag <span id="day-number"></span></div>
+                </div>
+                <div class="question"> Year </div>
+                <ul class="days">
+                    <li data-day="1">1</li>
+                    <li data-day="2">2</li>
+                    <li data-day="3">3</li>
+                    <li data-day="4">4</li>
+                    <li data-day="5">5</li>
+                    <li data-day="6">6</li>
+                    <li data-day="7">7</li>
+                    <li data-day="8">8</li>
+                    <li data-day="9">9</li>
+                    <li data-day="10">10</li>
+                    <li data-day="11">11</li>
+                    <li data-day="12">12</li>
+                    <li data-day="13">13</li>
+                    <li data-day="14">14</li>
+                    <li data-day="15">15</li>
+                    <li data-day="16">16</li>
+                    <li data-day="17">17</li>
+                    <li data-day="18">18</li>
+                    <li data-day="19">19</li>
+                    <li data-day="20">20</li>
+                    <li data-day="21">21</li>
+                    <li data-day="22">22</li>
+                    <li data-day="23">23</li>
+                    <li data-day="24">24</li>
+                    <li data-day="25">25</li>
+                    <li data-day="26">26</li>
+                    <li data-day="27">27</li>
+                    <li data-day="28">28</li>
+                    <li data-day="29">29</li>
+                    <li data-day="30">30</li>
+                    <li data-day="31">31</li>
+                </ul>
+            </div>
+            <div class="birthdate">
+                <div class="list-header"></span>
+                    <div class="num">4</div>
+                    <div class="title">Fødselsdag <span id="month-name"></div>
+                </div>
+            </div>
+            <div class="birthdate-content">Din fødselsdag er den <span id="f-dag"></span>. <span id="f-month"></span id="f-year"><span></span></div>
+            <div class="answer">
+                <button type="button" class="btn-answer">Se savr</button>
+            </div>
+        </div>
     </body>
 </html>
